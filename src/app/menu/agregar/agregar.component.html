@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+  <!--menu navegacion con directiva routerLink, class= estilo, -->
+  <h2>PlayGames</h2>
+  <div class="container-fluid">
+    <!--directiva routerLinkActive="active-link" = style CSS este se debe definir en CSS-->
+    <a routerLink="/populares" routerLinkActive="active-link" class="nav-link">populares</a>
+    <a routerLink="/descargados" routerLinkActive="active-link" class="nav-link">Más Descargados</a>
+    <a routerLink="/proximamente" routerLinkActive="active-link" class="nav-link">Proximamente</a>
+    <a routerLink="/agregar" routerLinkActive="active-link" class="nav-link">Agregar</a>
+    <a routerLink="/menu" routerLinkActive="active-link" class="nav-link">Menu Principal</a>
+
+    <!--Con estas dos opciones podemos crear la opcion salir pero antes debemos crear un metodo o funcion en el HTML-->
+    <a href="#" (click)="onLogoutClick()">Salir</a>
+    <!--<button (click)="onLogoutClick()">Salir</button>-->
+
+  </div>
+</nav>
+
+<div class="form-container">
+
+<form #formularioDatos (ngSubmit)="agregar()">
+  <h1 class="h3 mb-3 font-weight-normal">Agregar nuevo videojuego</h1>
+
+  <div>
+    <label for="titulo">Título:</label> <br>
+    <input type="text" id="titulo" name="titulo" [(ngModel)]="nuevoDato.titulo" required>
+  </div>
+  <div>
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" [(ngModel)]="nuevoDato.descripcion" required></textarea>
+  </div>
+  <div> <br>
+    <label for="clasificacion" >Clasificación:</label>
+    <select id="clasificacion" name="clasificacion" [(ngModel)]="nuevoDato.clasificacion" required>
+      <option value="5">5</option>
+      <option value="4">4</option>
+      <option value="3">3</option>
+      <option value="2">2</option>
+      <option value="1">1</option>
+    </select>
+  </div>
+  <div> <br>
+    <label for="fechaLanzamiento">Fecha de lanzamiento:</label>
+    <input type="date" id="fechaLanzamiento" name="fechaLanzamiento" [(ngModel)]="nuevoDato.fechaLanzamiento" required>
+  </div>
+  <div> <br>
+    <label for="numDescargas">Número de descargas:</label>
+    <input type="number" id="numDescargas" name="numDescargas" [(ngModel)]="nuevoDato.numDescargas" required>
+    <br>
+    <!--caja de checkbox -->
+<label>
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <small>
+      <label class="form-check-label" for="exampleCheck1">Aceptar términos y condiciones</label>
+    </small>
+  </label>
+  </div>
+
+  <button type="submit">Agregar</button>
+</form>
+</div>

@@ -1,0 +1,46 @@
+<!--separa espacios en formulario
+<form class="mt-4 ps-4 pe-4"> -->
+<div class="form-container">
+  <form>
+    <div class="text-center login-container">
+
+
+      <!--PARA OCUPAR NGMODEL SE TIENE QUE ir a MODELO.TS E IMPORTARLO con FormsModule. Sirve 
+            para detectar datos y en su componente.ts se tiene que crear un modelo con datos que va registrar-->
+
+      <img class="mb-4" src=" ../../../../../assets/pregunta.png" alt="" width="72" height="72">
+      <!--Imagen-->
+      <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
+
+      <br>
+      <label for="name">Name</label>
+      <br>
+      <input class="form-control" type="text" name="name" [(ngModel)]="newUser.name"
+        placeholder="Ingresa tu nombre completo">
+    </div>
+
+
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <br>
+    <input type="email" name="email" [(ngModel)]="newUser.email" class="form-control" id="exampleInputEmail1"
+      aria-describedby="emailHelp" placeholder="Ingresa tu Email">
+
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <br>
+    <input name="password" type="password" name="password" [(ngModel)]="newUser.password" class="form-control"
+      id="exampleInputPassword1" placeholder="Ingresa tu contraseña">
+
+
+
+    <label for="ConfirmPasword" class="form-label">Confirma tu contraseña</label>
+    <br>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirma tu contraseña">
+
+    <br>
+    <!--para registrar datos se usa el evento click y se pone la funcion creada en ts seguido de ()-->
+    <button type="submit" class="btn btn-success" (click)="enviar()">Registrarse</button>
+    <!--color, tamaño boton-->
+    <p class="mt-5 mb-3 text-muted">&copy; Uveg/Daniel</p>
+
+  </form>
+</div>

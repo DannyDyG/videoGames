@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+  <!--menu navegacion con directiva routerLink, class= estilo, -->
+  <h3>PlayGames</h3>
+  <div class="container-fluid">
+    <!--directiva routerLinkActive="active-link" = style CSS este se debe definir en CSS-->
+    <a routerLink="/populares" routerLinkActive="active-link" class="nav-link">populares</a>
+    <a routerLink="/descargados" routerLinkActive="active-link" class="nav-link">Más Descargados</a>
+    <a routerLink="/proximamente" routerLinkActive="active-link" class="nav-link">Proximamente</a>
+    <a routerLink="/agregar" routerLinkActive="active-link" class="nav-link">Agregar</a>
+    <a routerLink="/menu" routerLinkActive="active-link" class="nav-link">Menu Principal</a>
+
+    <!--Con estas dos opciones podemos crear la opcion salir pero antes debemos crear un metodo o funcion en el HTML-->
+    <a href="#" (click)="onLogoutClick()">Salir</a>
+    <!--<button (click)="onLogoutClick()">Salir</button>-->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="card">
+    <img class="mb-4" src="./../../../assets/bo2.png" alt="" width="200" height="200">
+    <h2 class="title">Título: BO2 </h2>
+    <p class="description">Black Ops II es el primer título de la serie que se establece en un ambiente completamente
+      futurista; a diferencia de sus dos antecesores, Modern Warfare 3 y Black Ops, que se establecían en un futuro
+      cercano y en la Guerra Fría, respectivamente. La nueva ambientación se ha descrito como una "Guerra Fría del siglo
+      XXI"..</p>
+    <p class="release-date">Fecha de Lanzamiento: 13/11/2012</p>
+    <p class="rating">Rating: 5/5</p>
+    <p class="downloads">Downloads: 900,000,000</p>
+    <button type="submit">Agregar al Carrito</button>
+  </div>
+
+  <div class="card">
+    <img class="mb-4" src="./../../../assets/mario.png" alt="" width="200" height="200">
+    <h2 class="title">Título: Mario Bros </h2>
+    <p class="description">El juego describe las aventuras de los hermanos Mario y Luigi, personajes que ya
+      protagonizaron el arcade Mario Bros. de 1983. En esta ocasión ambos deben rescatar a la Princesa Peach del Reino
+      Champiñón que fue secuestrada por el rey de los Koopas, Bowser.</p>
+    <p class="release-date">Fecha de Lanzamiento: 13/09/1985</p>
+    <p class="rating">Rating: 4/5</p>
+    <p class="downloads">Downloads: 900,000,000</p>
+    <button type="submit">Agregar al Carrito</button>
+  </div>
+
+  <div class="card">
+    <img class="mb-4" src="./../../../assets/minecraf.png" alt="" width="200" height="200">
+    <h2 class="title">Título: Minecraf </h2>
+    <p class="description">Minecraft es un videojuego tipo sandbox, su traducción literal sería “caja de arena” y es lo
+      que representa la experiencia de juego. Los jugadores pueden modelar el mundo a su gusto, destruir y construir,
+      como si estuviesen jugando en una caja de arena.</p>
+    <p class="release-date">Fecha de Lanzamiento: 18/11/2011</p>
+    <p class="rating">Rating: 5/5</p>
+    <p class="downloads">Downloads: 500,000,000</p>
+    <p class="coming-soon">(Proximamente)</p>
+    <button type="submit">Agregar al Carrito</button>
+  </div>
+
+  <div class="card">
+    <img class="mb-4" src="./../../../assets/roblox.jpeg" alt="" width="200px" height="200px">
+    <h2 class="title">Título: Roblox </h2>
+    <p class="description">Es algo muy parecido a crear tus mundos y videojuegos con piezas de Lego, y luego puedes
+      compartir tus creaciones con otros usuarios. Así, puede tanto dedicarte a jugar a los juegos creados por otros
+      como a los tuyos propios.</p>
+    <p class="release-date">Fecha de Lanzamiento: 22/05/2006</p>
+    <p class="rating">Rating: 4/5</p>
+    <p class="downloads">Downloads: 500,000,000</p>
+    <button type="submit">Agregar al Carrito</button>
+  </div>
+  
+</div>

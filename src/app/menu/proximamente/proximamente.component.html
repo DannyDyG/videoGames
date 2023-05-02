@@ -1,0 +1,88 @@
+<!--<a href="" routerLink="/populares">populares</a> -->
+
+<!--menu navegacion con directiva routerLink, class= estilo, 
+    directiva routerLinkActive="active-link" = style CSS este se debe definir en CSS-->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+  <div class="container-fluid">
+    <!--menu navegacion con directiva routerLink, class= estilo, -->
+    <h3>PlayGames</h3>
+    <!--directiva routerLinkActive="active-link" = style CSS este se debe definir en CSS-->
+    <a routerLink="/populares" routerLinkActive="active-link" class="nav-link">populares</a>
+    <a routerLink="/descargados" routerLinkActive="active-link" class="nav-link">Más Descargados</a>
+    <a routerLink="/proximamente" routerLinkActive="active-link" class="nav-link">Proximamente</a>
+    <a routerLink="/agregar" routerLinkActive="active-link" class="nav-link">Agregar</a>
+    <a routerLink="/menu" routerLinkActive="active-link" class="nav-link">Menu Principal</a>
+
+    <!--Con estas dos opciones podemos crear la opcion salir pero antes debemos crear un metodo o funcion en el HTML-->
+    <a href="#" (click)="onLogoutClick()">Salir</a>
+    <!--<button (click)="onLogoutClick()">Salir</button>-->
+  </div>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <img class="mb-4" src="./../../../assets/gta.png" alt="" width="200" height="200">
+    <h2 class="title">Título: GTA V </h2>
+    <p class="description">Se trata de una aventura de acción de mundo abierto con multitud de misiones en la que
+      encarnamos a tres personajes distintos: Trevor, Michael y Franklin. Además, cuenta con GTA Online, el modo
+      multijugador en lína de GTA 5.</p>
+    <p class="release-date">Fecha de Lanzamiento: 17/09/2013</p>
+    <p class="rating">Rating: 5/5</p>
+    <p class="downloads">Downloads: 100,000,000</p>
+    <p class="coming-soon">(Proximamente)</p>
+    <button type="submit">Agregar al Carrito</button>
+  </div>
+
+
+  <div class="card">
+    <img class="mb-4" src="./../../../assets/gow.webp" alt="" width="200" height="200">
+    <h2 class="title">Título: God of War </h2>
+    <p class="description">Es el primer juego en estrenarse y el tercero en términos cronológicos internos de la saga.
+      El juego narra las aventuras de Kratos, un general espartano al servicio de los Dioses de la mitología griega.</p>
+    <p class="release-date">Fecha de Lanzamiento: 13/03/2007</p>
+    <p class="rating">Rating: 3/5</p>
+    <p class="downloads">Downloads: 1,000,000</p>
+    <p class="coming-soon">(Proximamente)</p>
+    <button type="submit">Agregar al Carrito</button>
+  </div>
+
+
+  <div class="card">
+    <img class="mb-4" src="./../../../assets/minecraf.png" alt="" width="200" height="200">
+    <h2 class="title">Título: Minecraf </h2>
+    <p class="description">Minecraft es un videojuego tipo sandbox, su traducción literal sería “caja de arena” y es lo
+      que representa la experiencia de juego. Los jugadores pueden modelar el mundo a su gusto, destruir y construir,
+      como si estuviesen jugando en una caja de arena.</p>
+    <p class="release-date">Fecha de Lanzamiento: 18/11/2011</p>
+    <p class="rating">Rating: 5/5</p>
+    <p class="downloads">Downloads: 500,000,000</p>
+    <p class="coming-soon">(Proximamente)</p>
+    <button type="submit">Agregar al Carrito</button>
+  </div>
+
+
+  <div class="card">
+    <img class="mb-4" src="./../../../assets/tom.jpg" alt="" width="200px" height="200px">
+    <h2 class="title">Título: Tomb Raider </h2>
+    <p class="description">Tomb Raider es una aventura de acción aclamada por la crítica que explora los orígenes de
+      Lara Croft y su transformación, de joven inexperta a dura superviviente. Con su instinto como arma, Lara debe
+      luchar para huir de una isla remota y descubrir su oscura historia.</p>
+    <p class="release-date">Fecha de Lanzamiento: 05/03/2013</p>
+    <p class="rating">Rating: 3/5</p>
+    <p class="downloads">Downloads: 400,000,000</p>
+    <p class="coming-soon">(Proximamente)</p>
+    <button type="submit">Agregar al Carrito</button>
+  </div>
+
+  <div class="card">
+    <img class="mb-4" src="./../../../assets/ctr.jpg" alt="" width="200px" height="200px">
+    <h2 class="title">Título: Crash Team Racing </h2>
+    <p class="description">Crash Team Racing Nitro-Fueled es un juego de conducción y velocidad humorístico y
+      desenfadado, cartoon y completamente alocado, al estilo de juegos como Mario Kart o Diddy Kong Racing.</p>
+    <p class="release-date">Fecha de Lanzamiento: 16/12/1999</p>
+    <p class="rating">Rating: 3/5</p>
+    <p class="downloads">Downloads: 300,000,000</p>
+    <p class="coming-soon">(Proximamente)</p>
+    <button type="submit">Agregar al Carrito</button>
+  </div>
+</div>
